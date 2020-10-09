@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<body>
+		<style type="text/css">
+			body {
+				background-color: #FFFFFF;
+			}
+
+			#mybtn {
+				background-color: #F58A8A;
+			}
+			#icon,
+			#icon-more {
+				font-size: 24px;
+				color: #000000;
+			}
+			#font{
+				color:#000000;
+			}
+			.mui-content {
+				background-color: #FFFFFF;
+			}
+			.mui-bar-nav {
+				box-shadow: 0 1px 6px #ffffff;
+			}
+			.mui-input-row{
+				border-style: none;
+			}
+		</style>
+		<header class="mui-bar mui-bar-nav">
+			<a class=" mui-icon mui-icon-left-nav" href="indexEvent.html" id="icon"></a>
+			<h1 class="mui-title">任务详情</h1>
+			<a id="icon-more"><span class="mui-icon mui-icon-more mui-pull-right"></span></a>
+		</header>
+		<div class="mui-content">	
+			<a class="mui-navigate" href="setDate.html" id="font">
+					<p style="margin-left:10px;margin-bottom: 0;"><input name="checkbox" value="Item 1" type="checkbox" class="checkbox">今天,12:50-13:30</p>
+				</a>
+				<div class="mui-input-row">
+					<input type="text" value="番茄钟UI设计" style="border:0;margin-bottom: 0;">
+				</div>
+			<div class="mui-input-row">
+				<textarea id="textarea" rows="20" placeholder="描述" ></textarea>
+			</div>
+			<center>
+				<button id="mybtn" type="submit" style="width: 200px; color:#FFFFFF ;">完成</button>
+			</center>
+		</div>
+	</body>
+</html>

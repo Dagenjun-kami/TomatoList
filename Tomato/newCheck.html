@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>打卡</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<style>
+	#mybtn{
+		background-color: #F7C8C8;
+	}
+	 button {
+		margin-top: 10px;
+		margin-left: 15px;
+		border-color: ;
+	}
+</style>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a id="mybtn" style="color:#FFFFFF" class="mui-action-back  mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 id="mybtn" style="color:#FFFFFF" class="mui-title">新习惯</h1>
+		<a><span id="mybtn" style="color:#FFFFFF" class="mui-action-back mui-icon mui-icon-right-nav mui-pull-right mui-icon-checkmarkempty"></span></a>
+	</header>
+	<div class="mui-content">
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell mui-media">
+		<h5>习惯图标&名称</h5>
+				<img class="mui-media-object mui-pull-left" src="img/运动.png">
+				<div class="mui-media-body" style="margin-top: 5px;">
+					每天进步一点点
+				</div>
+			</a>
+		</li>
+	</ul>
+	
+	<div class="title" style = "margin:10px 0 0 10px">
+		频率
+	</div>	
+	<button id="mybtn" style="color:#FFFFFF" type="button">
+		按天
+	</button>
+	<button style="color:#555555" type="button" class="mui-btn-outlined">
+		按周
+	</button>
+	<div class="title" style = "margin:10px">
+		在这些天
+	</div>
+	<button id="mybtn" style="color:#FFFFFF" type="button">
+		周日
+	</button>
+	<button id="mybtn" style="color:#FFFFFF" type="button">
+		周一
+	</button>
+	<button id="mybtn" style="color:#FFFFFF" type="button">
+		周二
+	</button>
+	<button id="mybtn" style="color:#FFFFFF" type="button">
+		周三
+	</button>
+	<button id="mybtn" style="color:#FFFFFF" type="button">
+		周四
+	</button>
+	<button id="mybtn" style="color:#FFFFFF" type="button">
+		周五
+	</button>
+	<button id="mybtn" style="color:#FFFFFF" style="margin:1.2px" type="button">
+		周六
+	</button>
+	<div class="title" style = "margin:10px">
+		目标
+	</div>
+	<div class="mui-card" style="margin-bottom: 20px;">
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					当天完成打卡
+				</a>
+			</li>
+		</ul>
+	</div>
+		<div class="mui-content-padded">
+			<p id="info"></p>
+		</div>
+	<div class="title" style = "margin:10px">
+		提醒
+	</div>
+	<a id="icon-plus"><span class="mui-icon mui-icon-plus" style = "margin:8px"></span></a>
+	<form action="form_action.asp" method="get"style = "margin:8px">
+	鼓励语<input type="text" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+    .mui-content>.mui-card:first-child {
+		    margin-top: 0px;
+		}
+	.mui-bar-tab .mui-tab-item {
+	    color: #CCCCCC;
+	}
+	.mui-content{
+		background-color: #FFFFFF;
+	}
+	.mui-bar-nav {
+	    box-shadow:none;
+	}
+	.head2{
+		box-shadow: 1px 1px 3px #6a6a6a;
+	}
+	#calicon{
+		font-size:24px;
+		color:#F58A8A;
+		position:absolute;
+		right:10px;
+		top:5px;
+	}
+	.mui-bar-tab .mui-tab-item.mui-active {
+	    color: #F58A8A;
+	}
+	a{
+		color:#333;
+	}
+	/*日历样式*/
+	.fc-week0 ,.fc-week1,.fc-week2,.fc-week3,.fc-week4,.fc-week5{
+		height:93px;
+	}

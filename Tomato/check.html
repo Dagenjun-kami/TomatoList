@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/calender.css">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+		
+			mui.init();
+		</script>
+	</head>
+	<style>
+		.mui-content{
+		background-color: #FFFFFF;
+		
+	}
+	.mui-bar-nav {
+	    box-shadow: 0 1px 6px #ffffff;
+	}
+	.head{
+		box-shadow: 1px 1px 3px #6a6a6a;
+	}
+	#calicon{
+		font-size:24px;
+		color:#F58A8A;
+		position:absolute;
+		right:20px;
+		top:3px;
+	}
+	<button id='demo4' data-options='{"type":"date"}' class="btn mui-btn mui-btn-block">选择日期 ...</button>
+</style>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">打卡</h1>
+			<a onclick="window.location.href='newCheck.html'">
+				<i id="calicon" class="fa fa-plus" style="margin-top: 7px;"></i>
+			</a>
+		</header>
+		<footer>
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item" onclick="window.location.href='indexEvent.html'">
+					<i class="fa fa-check-square" style="font-size:30px;color:"></i>
+				</a>
+				<a class="mui-tab-item" onclick="window.location.href='calendar.html'">
+					<i class="fa fa-calendar-o" style="font-size:30px;"></i>
+				</a>
+				<a class="mui-tab-item mui-active" href="#">
+					<i class="fa fa-calendar-check-o" style="font-size:30px;"></i>
+				</a>
+				<a class="mui-tab-item" onclick="window.location.href='perCenter.html'">
+					<i class="fa fa-user" style="font-size:30px;"></i>
+				</a>
+			</nav>
+		</footer>
+		<div class="mui-content">
+			<div class="title">
+
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+						<img class="mui-media-object mui-pull-left" src="img/早起.png">
+						<div class="mui-media-body">
+							早起
+							<p class='mui-ellipsis'>共坚持10天</p>
+						</div>
+						<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined" onclick="window.location.href='checkEnd.html'">
+							打卡
+						</button>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/早睡.png">
+						<div class="mui-media-body">
+							早睡
+							<p class='mui-ellipsis'>共坚持10天</p>
+						</div>
+						<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined" onclick="window.location.href='checkEnd.html'">
+							打卡
+						</button>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/运动.png">
+						<div class="mui-media-body">
+							21天减肥计划
+							<p class='mui-ellipsis'>共坚持5天</p>
+						</div>
+						<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined" onclick="window.location.href='checkEnd.html'">
+							打卡
+						</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>

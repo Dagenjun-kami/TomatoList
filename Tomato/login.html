@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</head>
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+	<style>
+	#button{
+		position:relative;
+		background-color: #f78383;
+		border:none;
+		width:72%;
+		top:140px;
+		left:14%;
+		height:40px;
+		padding-top: 4px;
+	}
+	.button{
+		position:absolute;
+		bottom:180px;
+		left:25%;
+		
+	}
+		
+	form{
+		position:absolute;
+		width:72%;
+		left:14%;
+	}
+	.form-group{
+		height:40px;
+	}
+	a{
+		
+	}
+	</style>
+	<body>
+		<div align="center" style="margin-top:60px;"><img src='img/logo.png'></div>
+		<form>
+			<div class="form-group">
+				<input type="email" class="form-control" id="account" placeholder="手机号/邮箱">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" id="pwd" placeholder="密码">
+			</div>
+		</form>
+		<button id="button" class="btn btn-primary btn-lg btn-block" onclick="login()">登录</button>
+		<div class="button">
+		<button type="button" class="mui-btn mui-btn-link" onclick="window.location.href='verlogin.html'">
+			<a style="color:#525050;">验证码登录</a>
+		</button>|
+		<button  type="button" class="mui-btn mui-btn-link" onclick="window.location.href='regist.html'">
+			<a style="color:#525050;">用户注册</a>
+		</button>
+		</div>
+	</body>
+	<script>
+		function login() { //登录
+			window.location.href='indexEvent.html';
+		}
+	</script>
+</html>

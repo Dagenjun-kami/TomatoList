@@ -1,0 +1,112 @@
+<html>
+<head style="height: 100%;">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/calender.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+
+<body style="height: 100%;">
+	<div style="position: absolute; height: 100%; width: 100%; display: grid; grid-template-rows: 10% 50% 40%; height: 1hv;">
+		<div style="font-size: 1.5rem; display: grid; grid-template-columns: 1fr auto 1fr;">
+			<div style="margin-right: 1rem; color: rgb(247,200,200); vertical-align: top; font-size: 8rem; text-align: right;">“</div>
+			<div style="transform: translateY(2.75rem); text-align: center;">开始专注咯，现在放下你的手机吧</div>
+			<div style="margin-left: 1rem; color: rgb(247,200,200); transform: translateY(1.25rem); font-size: 8rem;">”</div>
+		</div>
+		
+		<div style="background-color: rgb(255,241,241); color: rgb(247,200,200); margin: 5%; display: grid; text-align: center; grid-template-rows: 1fr 1fr;">
+			<div style="transform: translateY(1rem); margin: auto auto; font-size:8rem"><u>00 : 00</u></div>
+		
+			<div style="margin: auto auto; font-size:2rem">
+				<div>lesion设计</div>
+				<div>进行中</div>
+			</div>
+			
+		</div>
+		
+		<div style="text-align: center;">
+			<button style="border: 0px; visibility: visible;" class="btn btn-lg" data-toggle="modal" data-target="#pauseModal" id='pauseBtnmd' type="button">
+				<i style="color: rgb(247,200,200); font-size: 6rem;" class="fa fa-pause-circle-o"></i>
+			</button>
+			<button style="border: 0px;" class="btn btn-lg" data-toggle="modal" data-target="#stopModal" id='stopBtn' type="button">
+				<i style="color: rgb(247,200,200); font-size: 6rem;" class="fa fa-stop-circle-o"></i>
+			</button>
+			<script>
+				var paused = false;
+			</script>
+		</div>
+		
+		<style type="text/css">
+			.modal-header.fxx {
+				background-color: rgb(246,151,151);
+				 color: #FFFFFF;
+				 border-radius: 0.3rem 0.3rem 0 0;
+			}
+		</style>
+		
+		<div class="modal fade" id="abortModal" tabindex="-1" role="dialog" aria-labelledby="abortModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header fxx bg-danger">
+						<h4 class="modal-title" id="myModalLabel" style="text-align: center;">放弃后的任务不会标记为已完成</h4>
+					</div>
+					<div style="text-align: center;" class="modal-footer">
+						<button type="button" class="btn"  data-dismiss="modal"  onclick="window.location.href='indexEvent.html'">确认放弃</button><br />
+						<button type="button" class="btn" data-dismiss="modal">取消</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		
+		<div class="modal fade" id="pausedModal" tabindex="-1" role="dialog" aria-labelledby="pausedModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header fxx bg-danger">
+						<h4 style="text-align: center;" class="modal-title" id="myModalLabel">请选择您的操作</h4>
+					</div>
+					<div style="text-align: center;" class="modal-footer">
+						<button type="button" class="btn" data-dismiss="modal" onclick="(()=>{
+								paused = false;
+								document.getElementById('pauseBtnmd').style.visibility = 'visible';
+								document.getElementById('stopBtn').dataset.target ='#stopModal';
+							})()">结束当前休息计时</button><br />
+						<button type="button" class="btn" data-dismiss="modal">取消</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		
+		<div class="modal fade" id="stopModal" tabindex="-1" role="dialog" aria-labelledby="stopModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header fxx bg-danger">
+						<h4 style="text-align: center;" class="modal-title" id="myModalLabel">请选择您的操作</h4>
+					</div>
+					<div style="text-align: center;" class="modal-footer">						
+						<button class="btn" data-toggle="modal" data-target="#abortModal" id='abortBtn' data-dismiss="modal" type="button">
+							放弃计时
+						</button><br />
+						
+						<button type="button" class="btn" data-dismiss="modal" onclick="(()=>{
+								paused = true;
+								document.getElementById('pauseBtnmd').style.visibility = 'hidden';
+								document.getElementById('stopBtn').dataset.target = '#pausedModal';
+							})()">终止计时</button><br />
+						<button type="button" class="btn" data-dismiss="modal">取消</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+		
+	</head>
+	<style>
+	a{
+		color:#333;
+	}
+</style>
+	<body>
+		<footer>
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active" href="#">
+					<i class="fa fa-check-square" style="font-size:30px;color:"></i>
+				</a>
+				<a class="mui-tab-item" onclick="window.location.href='calendar.html'">
+					<i class="fa fa-calendar-o" style="font-size:30px;"></i>
+				</a>
+				<a class="mui-tab-item" onclick="window.location.href='check.html'">
+					<i class="fa fa-calendar-check-o" style="font-size:30px;"></i>
+				</a>
+				<a class="mui-tab-item" onclick="window.location.href='perCenter.html'">
+					<i class="fa fa-user" style="font-size:30px;"></i>
+				</a>
+			</nav>
+		</footer>
+		<div id="tabbar" class="mui-control-content mui-active">
+			<header class="mui-bar mui-bar-nav">
+				<h3 class="mui-left" style="margin-top: 10px;">ToDoList</h3>
+				<a onclick="window.location.href='newEvent.html'">
+				<i id="calicon" class="fa fa-plus" style="margin-top: 7px;"></i>
+				</a>
+			</header>
+			<div class="mui-content" style="padding-bottom:0;">
+				<ul class="mui-table-view" style="margin-top:3px;">
+					<li class="mui-table-view-cell">
+						<div class="mui-table-cell mui-col-xs-10" >	
+							<h4 class="mui-ellipsis" style="margin-bottom: 3px;">
+							<i class="fa fa-square-o"></i>
+							<a onclick="window.location.href='eventDetail.html'">
+							 番茄钟UI设计</h4>
+							<span class="mui-h5" style="font-size:12px;color:#F58A8A;margin-left:20px;">今天，12:50-13:30</span>
+							</a>
+						</div>
+						<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined" id="openTimer()">
+							<span class="mui-h5" style="font-size:20px;color:#F58A8A;">开始</span>
+						</button>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="mui-table-cell mui-col-xs-10">
+							<h4 class="mui-ellipsis" style="margin-bottom: 3px;"><i class="fa fa-square-o"></i> 待办2</h4>
+							<span class="mui-h5" style="font-size:12px;color:#808080;margin-left:20px;">6月10日，12:00-13:00</span>
+						</div>
+						<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined" id="openTimer()">
+							<span class="mui-h5" style="font-size:20px;color:#F58A8A">开始</span>
+						</button>
+					</li>
+				</ul>
+				</li>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse" style="background-color:#f5dada;">
+						<a class="mui-navigate-right" href="#" style="height:18px;color:#525050 ;padding:1px 0 0 10px;">已完成</a>
+						<div class="mui-collapse-content">
+							<form class="mui-input-group">
+								<div class="mui-table">
+					<li class="mui-table-view-cell">
+						<h4 class="mui-ellipsis" style="margin-bottom: 3px;"><i class="fa fa-check-square"></i> 图像处理</h4>
+						<span class="mui-h5" style="font-size:12px;color:#808080;margin-left:20px;margin-top:7px"> 昨天，10:30-11:50</span>
+					</li>
+
+					<li class="mui-table-view-cell">
+						<h4 class="mui-ellipsis" style="margin-bottom: 3px;"><i class="fa fa-check-square"></i> 软件工程</h4>
+						<span class="mui-h5" style="font-size:12px;color:#808080;margin-left:20px;"> 昨天，8:30-7:50</span>
+					</li>
+			</div>
+		</div>
+		</li>
+		</ul>
+		</div>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="js/jq/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	
+	document.querySelector('button').addEventListener('tap', function() {
+		mui.openWindow({
+			url: 'timer.html',
+			extras: {
+				name: 'mui'
+			}
+		});
+	});
+	</script>
+		</html>

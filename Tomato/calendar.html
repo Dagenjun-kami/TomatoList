@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/fullcalendar.css">
+		<link rel="stylesheet" href="css/fullcalendar.print.css" media='print'>
+		<link rel="stylesheet" href="css/calstyle.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style>
+
+	</style>
+
+	<body>
+		<footer>
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item" onclick="window.location.href='indexEvent.html'">
+					<i class="fa fa-check-square" style="font-size:30px;color:"></i>
+				</a>
+				<a class="mui-tab-item mui-active" href=#>
+					<i class="fa fa-calendar-o" style="font-size:30px;"></i>
+				</a>
+				<a class="mui-tab-item" onclick="window.location.href='check.html'">
+					<i class="fa fa-calendar-check-o" style="font-size:30px;"></i>
+				</a>
+				<a class="mui-tab-item" onclick="window.location.href='perCenter.html'">
+					<i class="fa fa-user" style="font-size:30px;"></i>
+				</a>
+			</nav>
+		</footer>
+		<div id="mui-content">
+			<div class="main">
+				<!--默认是最小化的形式，需要改成最大就把container样式换成container-fluid-->
+				<div class="container-fluid" style="padding: 0px">
+					<div class="content">
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="box">
+									<div class="box-content box-nomargin">
+										<div class="calendar"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+</html>
